@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aumkar Pujapa — Handmade Saag & Savan Wood Swings (સાગ અને સેવન હિંડોળા)</title>
+<meta name="description" content="Aumkar Pujapa — Handcrafted Saag (Teak) & Savan (Sevan) wood swings (julas/હિંડોળા) and Thakorji sinhasans for your home temple. Custom made in pure wood. Call 9974112190.">
+<link rel="canonical" href="https://aumkarpujapa.store/">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="Aumkar Pujapa — Pure Saag & Savan Wood Swings">
+<meta property="og:description" content="Handmade Saag & Savan wood swings (julas) and sinhasans for your home temple. Made to order.">
+<meta property="og:url" content="https://aumkarpujapa.store/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aumkar Pujapa — Saag & Savan Wood Swings">
+<meta name="twitter:description" content="Handcrafted wooden swings for home temple in pure Saag and Savan wood.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@500;700&family=Noto+Serif+Gujarati:wght@500;700&family=Noto+Sans+Gujarati:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ========== DESIGN SYSTEM & PERFORMANCE ========== */
+:root {
+  --bg-primary: #0D0A07;
+  --bg-secondary: #1A1410;
+  --bg-card: #231D16;
+  --bg-card-hover: #2C2319;
+  --bg-elevated: #1E1813;
+  --surface-glass: rgba(35, 29, 22, 0.75);
+  --surface-glass-border: rgba(201, 162, 39, 0.18);
+
+  --gold: #C9A227;
+  --gold-light: #E8CC5A;
+  --gold-dim: #8B7019;
+  --gold-glow: rgba(201, 162, 39, 0.18);
+
+  --saffron: #DB8A1E;
+  --saffron-light: #F0A640;
+  --sindoor: #C0392B;
+  --sindoor-light: #E74C3C;
+
+  --text-primary: #F5F0E8;
+  --text-secondary: #B8A98A;
+  --text-muted: #8E7E69;
+  --text-accent: var(--gold-light);
+
+  --saag-gold: #D4AF37;
+  --savan-cream: #F5E6CA;
+  --teak: #4A2E1F;
+  --teak-light: #7A5233;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.4);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 40px rgba(201, 162, 39, 0.12);
+
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+* { min-width: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', 'Noto Sans Gujarati', system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Serif', 'Noto Serif Gujarati', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; }
+
+/* ========== PERFORMANCE OPTIMIZATIONS ========== */
+.section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 650px;
+}
+.prod-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 360px;
+  will-change: transform;
+}
+.wood-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 400px;
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ========== HEADER ========== */
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 clamp(20px, 5vw, 80px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, padding 0.3s ease, border-bottom 0.3s ease;
+  transform: translateY(0);
+  will-change: transform;
+}
+.header.header-hidden {
+  transform: translateY(-100%);
+}
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 12px;
+}
+.header.scrolled {
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid var(--surface-glass-border);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.header.scrolled .header-inner { padding: 12px 0; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.logo-icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  border-radius: 12px;
+  font-size: 22px;
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.35);
+  flex-shrink: 0;
+}
+.logo-text {
+  font-family: 'Noto Serif', 'Noto Serif Gujarati', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.logo-text span {
+  font-size: 0.95rem;
+  color: var(--gold-light);
+  font-weight: 600;
+  margin-left: 4px;
+}
+.logo-sub {
+  display: block;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--gold-light);
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav { display: flex; align-items: center; gap: 6px; }
+.nav-link {
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  transition: var(--transition-fast);
+  position: relative;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--text-primary);
+  background: rgba(201, 162, 39, 0.1);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px; left: 50%; width: 0; height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+  transition: var(--transition-fast);
+  transform: translateX(-50%);
+}
+.nav-link:hover::after, .nav-link.active::after { width: 20px; }
+
+.header-actions { display: flex; align-items: center; gap: 12px; }
+
+.header-greeting {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  color: var(--bg-primary);
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-radius: 50px;
+  border: none;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.25);
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 100%;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(201, 162, 39, 0.35);
+}
+.cta-btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  box-shadow: none;
+}
+.cta-btn-outline:hover {
+  background: rgba(201, 162, 39, 0.12);
+  box-shadow: none;
+}
+.cta-btn-sindoor {
+  background: linear-gradient(135deg, var(--sindoor), var(--sindoor-light));
+  box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);
+  color: #fff;
+}
+.cta-btn-sindoor:hover {
+  box-shadow: 0 8px 25px rgba(192, 57, 43, 0.4);
+}
+
+/* Mobile menu */
+.hamburger {
+  display: none;
+  background: none; border: none;
+  width: 36px; height: 36px;
+  flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: var(--transition-fast);
+}
+
+/* ========== HERO ========== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 130px clamp(20px, 5vw, 80px) 80px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(165deg, #1f140a 0%, #0D0A07 45%, #17110B 75%, #0D0A07 100%);
+}
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: -40%; right: -20%;
+  width: 850px; height: 850px;
+  background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 65%);
+  border-radius: 50%;
+  animation: float-glow 8s ease-in-out infinite;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  bottom: -20%; left: -15%;
+  width: 650px; height: 650px;
+  background: radial-gradient(circle, rgba(219, 138, 30, 0.06) 0%, transparent 65%);
+  border-radius: 50%;
+  animation: float-glow 10s ease-in-out infinite reverse;
+}
+@keyframes float-glow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.08); }
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-text { max-width: 650px; }
+
+.hero-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(201, 162, 39, 0.12);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  animation: fade-up 0.8s ease both;
+}
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+.hero-badge-guj {
+  background: rgba(219, 138, 30, 0.12);
+  border-color: rgba(219, 138, 30, 0.25);
+  color: #F0A640;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.hero-title {
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.25;
+  animation: fade-up 0.8s 0.15s ease both;
+}
+.hero-title .highlight {
+  background: linear-gradient(135deg, var(--gold-light), var(--saffron-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 52ch;
+  margin-bottom: 34px;
+  line-height: 1.7;
+  animation: fade-up 0.8s 0.3s ease both;
+}
+
+.hero-materials-pill {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.wood-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.wood-pill strong { color: var(--gold-light); }
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  animation: fade-up 0.8s 0.45s ease both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: fade-up 1s 0.4s ease both;
+}
+.hero-swing-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+.hero-swing-glow {
+  position: absolute;
+  inset: -25%;
+  background: radial-gradient(circle, rgba(201, 162, 39, 0.12) 0%, transparent 60%);
+  border-radius: 50%;
+  animation: breathe 4s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+
+.hero-swing-card {
+  position: relative;
+  background: linear-gradient(145deg, var(--bg-card), var(--bg-secondary));
+  border: 1.5px solid rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+.hero-swing-card img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+
+
+
+/* ========== TRUST BAR ========== */
+.trust-bar {
+  padding: 36px clamp(20px, 5vw, 80px);
+  border-top: 1px solid rgba(201, 162, 39, 0.1);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+  background: var(--bg-secondary);
+}
+.trust-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: clamp(20px, 4vw, 50px);
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.trust-icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+/* ========== SECTIONS ========== */
+.section {
+  padding: 90px clamp(20px, 5vw, 80px);
+  position: relative;
+}
+.section-inner { max-width: 1250px; margin: 0 auto; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 16px;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.section-subtitle {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin: 0 auto;
+}
+
+
+
+/* ========== PRODUCTS & FILTERING ========== */
+.products-section { background: var(--bg-secondary); }
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.filter-btn {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  color: var(--text-secondary);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.filter-btn:hover, .filter-btn.active {
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  color: var(--bg-primary);
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.25);
+}
+
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+.prod-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.prod-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201, 162, 39, 0.25);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.45), var(--shadow-glow);
+}
+
+.prod-thumb {
+  height: 240px;
+  background: linear-gradient(145deg, #2C2319, #1A1410);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.prod-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+.prod-card:hover .prod-thumb img {
+  transform: scale(1.06);
+}
+
+.prod-tag {
+  position: absolute;
+  top: 14px; left: 14px;
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  color: var(--bg-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+.prod-wood-tag {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(13, 10, 7, 0.85);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  color: var(--gold-light);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.prod-body {
+  padding: 22px 24px 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.prod-body h3 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+.prod-size {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+.prod-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-top: 2px;
+}
+.prod-body .cta-btn {
+  margin-top: auto;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 0.88rem;
+}
+
+.load-more-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ========== CONTACT ========== */
+.contact-section { background: var(--bg-secondary); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.contact-info {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+}
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.contact-info .contact-desc {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.08);
+}
+.contact-detail:last-of-type { border-bottom: none; }
+.contact-detail-icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(201, 162, 39, 0.1);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact-detail-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact-detail-value {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.contact-map {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: var(--radius-lg);
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+}
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  text-align: center;
+}
+.map-placeholder .map-icon { font-size: 3rem; color: var(--gold-light); }
+
+/* ========== FOOTER ========== */
+.footer {
+  background: var(--bg-primary);
+  border-top: 1px solid rgba(201, 162, 39, 0.1);
+  padding: 60px clamp(20px, 5vw, 80px) 30px;
+}
+.footer-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.08);
+}
+.footer-brand .logo-text { font-size: 1.5rem; }
+.footer-brand .footer-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  max-width: 38ch;
+  margin-top: 14px;
+  line-height: 1.7;
+}
+.footer-col h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.footer-col a {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  padding: 5px 0;
+  transition: var(--transition-fast);
+}
+.footer-col a:hover { color: var(--text-primary); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ========== PRODUCT MODAL ========== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0,0,0,0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.open { display: flex; opacity: 1; }
+.modal-overlay.opening { display: flex; }
+
+.modal {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-xl);
+  max-width: 1000px;
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(30px) scale(0.95);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+.modal-overlay.open .modal {
+  transform: translateY(0) scale(1);
+}
+
+.modal::-webkit-scrollbar { width: 6px; }
+.modal::-webkit-scrollbar-track { background: transparent; }
+.modal::-webkit-scrollbar-thumb { background: rgba(201,162,39,0.25); border-radius: 3px; }
+
+.modal-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 40px; height: 40px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--surface-glass-border);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  z-index: 10;
+}
+.modal-close:hover {
+  background: rgba(201, 162, 39, 0.2);
+  color: var(--text-primary);
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.modal-gallery {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.modal-main-img {
+  background: linear-gradient(145deg, #2C2319, #1A1410);
+  border-radius: var(--radius-md);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(201, 162, 39, 0.15);
+}
+.modal-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.modal-thumbs {
+  display: flex;
+  gap: 10px;
+}
+.modal-thumb {
+  width: 64px; height: 64px;
+  background: var(--bg-card);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  overflow: hidden;
+}
+.modal-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.modal-thumb.active { border-color: var(--gold); }
+.modal-thumb:hover:not(.active) { border-color: rgba(201, 162, 39, 0.3); }
+
+.modal-info {
+  padding: 36px 36px 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.modal-title {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+.modal-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+.modal-rating .stars { color: var(--gold); letter-spacing: 2px; }
+.modal-price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gold-light);
+  margin-top: 6px;
+}
+.modal-highlights {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.modal-highlights li::before {
+  content: '✓';
+  color: var(--gold);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.modal-specs {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+}
+.modal-specs tr { border-bottom: 1px solid rgba(201, 162, 39, 0.08); }
+.modal-specs th, .modal-specs td { padding: 10px 12px; text-align: left; font-size: 0.88rem; }
+.modal-specs th { color: var(--text-muted); font-weight: 500; width: 42%; }
+.modal-specs td { color: var(--text-primary); font-weight: 500; }
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.modal-delivery {
+  margin-top: 16px;
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.delivery-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.delivery-item .d-icon { font-size: 1rem; flex-shrink: 0; }
+
+/* ========== WHATSAPP FAB ========== */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  width: 60px; height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  z-index: 900;
+  transition: var(--transition-fast);
+  animation: fab-pulse 3s ease-in-out infinite;
+}
+.whatsapp-fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+}
+.whatsapp-fab svg { width: 30px; height: 30px; fill: white; }
+@keyframes fab-pulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35); }
+  50% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55), 0 0 0 12px rgba(37, 211, 102, 0.08); }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .hero-content { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .modal { max-width: 90%; }
+}
+
+@media (max-width: 900px) {
+  .hero-content { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+  .hero-text { max-width: 100%; margin: 0 auto; }
+  .hero-badge-group, .hero-materials-pill, .hero-actions { justify-content: center; }
+  .hero-visual { order: -1; }
+  .hero-swing-wrapper { max-width: 320px; }
+  .modal-grid { grid-template-columns: 1fr; }
+  .modal-gallery { padding: 24px 24px 16px; }
+  .modal-info { padding: 0 24px 24px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+}
+
+@media (max-width: 640px) {
+  .nav { display: none; }
+  .hamburger { display: flex; }
+  .header-actions .cta-btn { display: none; } /* WhatsApp FAB already covers this on mobile */
+  .logo-text { font-size: 1.05rem; max-width: 46vw; }
+  .logo-sub { max-width: 46vw; font-size: 0.62rem; }
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--surface-glass-border);
+    padding: 16px;
+    box-shadow: var(--shadow-md);
+  }
+  .nav.open .nav-link { width: 100%; padding: 14px 16px; text-align: left; min-height: 44px; display: flex; align-items: center; }
+  .hero { min-height: auto; padding-top: 100px; padding-bottom: 45px; }
+  .hero-title { font-size: 2.1rem; }
+  .section { padding: 45px clamp(16px, 4vw, 24px); }
+  .section-header { margin-bottom: 28px; }
+  .prod-grid { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .cta-btn { justify-content: center; width: 100%; }
+  .header-greeting { display: none; }
+  .whatsapp-fab { bottom: 20px; right: 20px; width: 52px; height: 52px; }
+  .whatsapp-fab svg { width: 26px; height: 26px; }
+
+  /* Mobile Modal — Strict 1 Frame Horizontal & Vertical Scroll Only */
+  .modal-overlay {
+    padding: 12px 8px;
+    align-items: flex-end;
+  }
+  .modal {
+    max-width: 100%;
+    width: 100%;
+    max-height: 88vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 18px 18px 0 0;
+    margin: 0;
+  }
+  .modal-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .modal-gallery {
+    padding: 16px 14px 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .modal-main-img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1.1;
+  }
+  .modal-thumbs {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    gap: 8px;
+  }
+  .modal-thumb {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+  }
+  .modal-info {
+    padding: 0 14px 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .modal-title {
+    font-size: 1.25rem;
+    word-break: break-word;
+  }
+  .modal-price {
+    font-size: 1.2rem;
+  }
+  .modal-specs {
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-word;
+  }
+  .modal-specs th {
+    width: 42%;
+    padding: 8px 6px;
+    font-size: 0.78rem;
+  }
+  .modal-specs td {
+    width: 58%;
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+  .modal-actions .cta-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+    font-size: 0.84rem;
+  }
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-icon { width: 38px; height: 38px; font-size: 18px; }
+  .logo-text { font-size: 1rem; max-width: 42vw; }
+  .logo-sub { font-size: 0.6rem; max-width: 42vw; }
+  .hero-title { font-size: 1.75rem; }
+  .hero-desc { font-size: 0.95rem; }
+  .hero-swing-wrapper { max-width: 260px; }
+  .filter-tabs { gap: 6px; }
+  .filter-btn { padding: 8px 14px; font-size: 0.8rem; }
+  .contact-info { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon">ॐ</div>
+      <div>
+        <div class="logo-text">Aumkar Pujapa <span>(ॐકાર પુજાપા)</span></div>
+        <span class="logo-sub">Handmade Swings — શુદ્ધ સાગ અને સેવન કાષ્ઠ</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#home" class="nav-link active">Home (હોમ)</a>
+      <a href="#products" class="nav-link">Products (પ્રોડક્ટ્સ)</a>
+      <a href="#about" class="nav-link">Contact (સંપર્ક)</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="header-greeting">જય શ્રી કૃષ્ણ</div>
+      <a class="cta-btn cta-btn-outline" href="https://wa.me/919974112190?text=Hello%20Aumkar%20Pujapa%2C%20I%20am%20interested%20in%20your%20Saag%20and%20Savan%20wood%20swings" target="_blank" rel="noopener noreferrer" style="border-color: #25D366; color: #25D366;">
+        <span>💬</span> <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge-group">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span>100% Pure Wood · શુદ્ધ કાષ્ઠ</span>
+        </div>
+        <div class="hero-badge hero-badge-guj">
+          <span>સાગ અને સેવન લાકડું (Saag & Savan Wood)</span>
+        </div>
+      </div>
+      <h1 class="hero-title">
+        Handcrafted Swings — <span class="highlight">શુદ્ધ સાગ અને સેવન લાકડાના હિંડોળા</span>
+      </h1>
+      <p class="hero-desc">
+        Authentic handmade wooden swings (જુલા / હિંડોળા) & Thakorji sinhasans crafted from pure <strong>Saag Wood (સાગનું લાકડું)</strong> and <strong>Savan Wood (સેવનનું લાકડું)</strong>. Designed for elegance, spiritual purity, and lifelong durability for your home temple.
+      </p>
+      
+      <div class="hero-materials-pill">
+        <div class="wood-pill">🪵 <strong>Saag Wood (સાગ)</strong> — Durable Teak</div>
+        <div class="wood-pill">🌿 <strong>Savan Wood (સેવન)</strong> — Sacred Sevan</div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#products" class="cta-btn">
+          <span>View Swings (જુલા જુઓ)</span> →
+        </a>
+        <a href="https://wa.me/919974112190?text=Hello%20Aumkar%20Pujapa%2C%20I%20am%20interested%20in%20your%20Saag%20and%20Savan%20wood%20swings" class="cta-btn cta-btn-outline" target="_blank" rel="noopener noreferrer">
+          <span>💬</span> <span>WhatsApp Inquiry (પૂછપરછ કરો)</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-swing-wrapper">
+        <div class="hero-swing-glow"></div>
+        <div class="hero-swing-card">
+          <img src="images/main.jpeg" alt="Aumkar Pujapa Saag Wood Swing">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar reveal">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-icon">🪵</div>
+      <span>Saag Wood (સાગનું લાકડું)</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🌿</div>
+      <span>Savan Wood (સેવનનું લાકડું)</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">📐</div>
+      <span>Custom Sizes (ઓર્ડર મુજબ માપ)</span>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- PRODUCTS & OPTIMIZED ENGINE -->
+<section class="section products-section" id="products">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-badge">અમારા હિંડોળા · Our Collection</div>
+      <h2 class="section-title">Browse Swings & Sinhasans</h2>
+      <p class="section-subtitle">Every piece is hand-carved in pure Saag (સાગ) or Savan (સેવન) wood — WhatsApp us to order or customize dimensions.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all" onclick="filterProducts('all')">All Swings (બધા)</button>
+      <button class="filter-btn" data-filter="fixed" onclick="filterProducts('fixed')">Fixed Swings (ફિક્સ્ડ)</button>
+      <button class="filter-btn" data-filter="folding" onclick="filterProducts('folding')">Folding Swings (ફોલ્ડિંગ)</button>
+      <button class="filter-btn" data-filter="sinhasan" onclick="filterProducts('sinhasan')">Sinhasan (સિંહાસન)</button>
+      <button class="filter-btn" data-filter="other" onclick="filterProducts('other')">Other (અન્ય)</button>
+    </div>
+
+    <!-- Dynamic Product Grid -->
+    <div class="prod-grid" id="productGrid"></div>
+
+    <!-- Load More Button -->
+    <div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
+      <button class="cta-btn cta-btn-outline" onclick="loadMoreProducts()">
+        <span>➕ View More Products (વધુ પ્રોડક્ટ્સ જુઓ)</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-badge">અમારા વિશે & સંપર્ક · Contact Us</div>
+      <h2 class="section-title">Aumkar Pujapa (ॐકાર પુજાપા)</h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h2>Get in Touch (સંપર્ક કરો)</h2>
+        <p class="contact-desc">Message us on WhatsApp for orders, custom sizes, or visit our workshop in person.</p>
+        
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💬</div>
+          <div>
+            <div class="contact-detail-label">WhatsApp (વ્હોટ્સએપ નંબર)</div>
+            <div class="contact-detail-value"><a href="https://wa.me/919974112190" target="_blank" rel="noopener noreferrer" style="color: #25D366;">+91 9974112190</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+          <div>
+            <div class="contact-detail-label">Opening Hours (સમય)</div>
+            <div class="contact-detail-value">Monday – Saturday, 10:00 AM – 7:00 PM (સોમ–શનિ)</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉️</div>
+          <div>
+            <div class="contact-detail-label">Email (ઈમેલ)</div>
+            <div class="contact-detail-value"><a href="mailto:aumkarpujapa@gmail.com" style="color: var(--gold-light);">aumkarpujapa@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <a href="https://wa.me/919974112190?text=Hello%20Aumkar%20Pujapa%2C%20I%20am%20interested%20in%20your%20Saag%20and%20Savan%20wood%20swings" class="cta-btn" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: #fff; width: 100%; justify-content: center;">
+            <span>💬</span> <span>Message on WhatsApp (વ્હોટ્સએપ મેસેજ કરો)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <div class="map-placeholder">
+          <div class="map-icon">📍</div>
+          <h3>Aumkar Pujapa Workshop & Shop</h3>
+          <p>દુકાનની મુલાકાત લો — Visit us to view Saag & Savan wood swings and Thakorji sinhasans in person.</p>
+          <span style="font-size:0.82rem; color:var(--gold); margin-top:8px;">WhatsApp inquiry and workshop pickup available</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom: 4px;">
+          <div class="logo-icon">ॐ</div>
+          <div>
+            <div class="logo-text">Aumkar Pujapa</div>
+            <span class="logo-sub">Handmade Swings — શુદ્ધ સાગ અને સેવન કાષ્ઠ</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium handcrafted Saag (Teak) and Savan (Sevan) wood swings for your home temple. Every piece carved with devotion and traditional art.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links (લિંક્સ)</h4>
+        <a href="#home">Home (હોમ)</a>
+        <a href="#products">Products (પ્રોડક્ટ્સ)</a>
+        <a href="#about">Contact (સંપર્ક)</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact (સંપર્ક)</h4>
+        <a href="https://wa.me/919974112190" target="_blank" rel="noopener noreferrer" style="color: #25D366;">💬 WhatsApp: +91 9974112190</a>
+        <a href="mailto:aumkarpujapa@gmail.com">✉️ aumkarpujapa@gmail.com</a>
+        <span style="padding: 5px 0; display: block;">Mon–Sat, 10 AM – 7 PM (સોમ–શનિ)</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© Aumkar Pujapa (ॐકાર પુજાપા). Phone inquiries and shop pickup only.</span>
+      <span><a href="https://aumkarpujapa.store" style="color: var(--gold-dim);">aumkarpujapa.store</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="productModal">
+  <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+  <div class="modal">
+    <div class="modal-grid">
+      <div class="modal-gallery">
+        <div class="modal-main-img" id="modalMainImg"></div>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal-info">
+        <div class="modal-category" id="modalCategory"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+
+        <div class="modal-price" id="modalPrice">WhatsApp for Price · ભાવ માટે WhatsApp કરો</div>
+        <ul class="modal-highlights" id="modalHighlights"></ul>
+        <table class="modal-specs" id="modalSpecs"></table>
+        <div class="modal-actions">
+          <a href="https://wa.me/919974112190?text=Hello%20Aumkar%20Pujapa%2C%20I%20am%20interested%20in%20your%20Saag%20and%20Savan%20wood%20swings" class="cta-btn" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: #fff; width: 100%; justify-content: center;">
+            <span>💬</span> <span>Inquire on WhatsApp (વ્હોટ્સએપ પર પૂછપરછ કરો)</span>
+          </a>
+        </div>
+        <div class="modal-delivery">
+          <div class="delivery-item"><span class="d-icon">💬</span> <span>WhatsApp inquiry & workshop order only</span></div>
+          <div class="delivery-item"><span class="d-icon">🛠️</span> <span>Available in Saag (સાગ) & Savan (સેવન) wood</span></div>
+          <div class="delivery-item"><span class="d-icon">📐</span> <span>Custom sizes made to order</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP FAB -->
+<a class="whatsapp-fab" href="https://wa.me/919974112190?text=Hello%20Aumkar%20Pujapa%2C%20I%20am%20interested%20in%20your%20Saag%20and%20Savan%20wood%20swings" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const PHONE = "9974112190";
+const INITIAL_LOAD_LIMIT = 6;
+
+const PRODUCTS = {
+  1: {
+    id: 1, type: "fixed", tag: "Fixed Swing", woodTag: "Saag / Savan",
+    title: "Jula — 19\"–20\" (સામાન્ય સાગ / સેવન જુલો)",
+    overall: "19–20 inch", seat: "7.25 × 10 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/Fixed/Fix_1.1.jpeg",
+    images: ["images/Fixed/Fix_1.2.jpeg", "images/Fixed/Fix_1.3.jpeg", "images/Fixed/Fix_1.4.jpeg"],
+    highlights: [
+      "મજબૂત સાગ (Saag) અથવા પવિત્ર સેવન (Savan) લાકડામાંથી બનેલ",
+      "રોજિંદા પૂજા માટે યોગ્ય સિંહાસન માપ",
+      "ઓર્ડર પ્રમાણે કસ્ટમ માપમાં પણ બનાવી આપીએ છીએ"
+    ],
+    decoration: "Plain / Carved posts (સાદો અથવા કોતરણીવાળો)",
+    price: 1399 // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  2: {
+    id: 2, type: "fixed", tag: "Fixed Swing", woodTag: "Saag / Savan",
+    title: "Jula — 21\"–26\" (મોટો સાગ / સેવન હિંડોળો)",
+    overall: "21–26 inch", seat: "12 × 8 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/2.jpeg",
+    images: ["images/2.jpeg", "images/1.jpeg", "images/3.jpeg"],
+    highlights: [
+      "મોટા સિંહાસન સાથે વિશાળ અને મજબૂત હિંડોળો",
+      "ઘંટડી અને ઝુમ્મર લટકાવવાની સુંદર સજાવટ",
+      "મંદિર અથવા મોટા ઠાકોરજી માટે ઉત્તમ પસંદગી",
+      "ઓર્ડર પ્રમાણે માપ અને ડીઝાઈન બદલી શકાય"
+    ],
+    decoration: "Hanging bells & carved top (લટકતી ઘંટડીઓ)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  3: {
+    id: 3, type: "fixed", tag: "Fixed Swing", woodTag: "Saag / Savan",
+    title: "Jula — 16\"–18\" (નાનો જુલો)",
+    overall: "16–18 inch", seat: "7.5 × 6 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/3.jpeg",
+    images: ["images/3.jpeg", "images/4.jpeg", "images/1.jpeg"],
+    highlights: [
+      "ઘર મંદિર માટે કોમ્પેક્ટ અને સુંદર સાઈઝ",
+      "હાથે બનાવેલ, હલકો પણ અત્યંત મજબૂત",
+      "નાના ઠાકોરજીના પૂજન માટે અનુકૂળ",
+      "સાગ અથવા સેવન લાકડામાં ઉપલબ્ધ"
+    ],
+    decoration: "Classic plain polish (સાદી પોલિશ)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  4: {
+    id: 4, type: "folding", tag: "Folding Swing", woodTag: "Saag / Savan",
+    title: "Folding Jula — 13\"(20\") (ફોલ્ડિંગ હિંડોળો)",
+    overall: "13(20) inch", seat: "8 × 7 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/4.jpeg",
+    images: ["images/4.jpeg", "images/5.jpeg", "images/2.jpeg"],
+    highlights: [
+      "સહેલાઈથી ફોલ્ડ (ગડી) કરી શકાય તેવો સ્પેસ-સેવિંગ જુલો",
+      "મુસાફરી અથવા નાના મંદિર માટે ખાસ ઉપયોગી",
+      "શુદ્ધ ટકાઉ સાગ કે સેવન લાકડામાંથી બનેલ",
+      "ઓર્ડર મુજબ સાઈઝ કસ્ટમાઈઝ થઈ શકે"
+    ],
+    decoration: "Foldable frame design (ફોલ્ડેબલ ડિઝાઇન)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  5: {
+    id: 5, type: "sinhasan", tag: "Sinhasan", woodTag: "Savan / Saag",
+    title: "Thakorji Sinhasan — 12\"×10\" (ઠાકોરજી સિંહાસન)",
+    overall: "12 × 10 inch", seat: "8 × 6 inch",
+    woodOptions: "Savan Wood (સેવન) & Saag Wood (સાગ)",
+    image: "images/5.jpeg",
+    images: ["images/5.jpeg", "images/6.jpeg", "images/7.jpeg"],
+    highlights: [
+      "પવિત્ર સેવન અથવા સાગના લાકડામાંથી બનાવેલ",
+      "ઠાકોરજીના શૃંગાર અને પૂજન માટે સુશોભિત બેઠક",
+      "બારીક હસ્તકલા કોતરણી કામ",
+      "ઓર્ડર પ્રમાણે કસ્ટમ માપ ઉપલબ્ધ"
+    ],
+    decoration: "Intricate backrest carving (કોતરણીવાળી પીઠ)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  6: {
+    id: 6, type: "fixed", tag: "Fixed Swing", woodTag: "Saag Wood",
+    title: "Carved Saag Jula (રાજવાડી સાગ હિંડોળો)",
+    overall: "24–28 inch", seat: "14 × 9 inch",
+    woodOptions: "Saag Wood (સાગ)",
+    image: "images/6.jpeg",
+    images: ["images/6.jpeg", "images/7.jpeg", "images/8.jpeg"],
+    highlights: [
+      "શુદ્ધ સાગ લાકડામાંથી બનેલ રાજવાડી ડીઝાઈન જુલો",
+      "મજબૂત પિલર અને સુંદર પિરામિડ કોતરણી",
+      "મંદિર માટે ઉત્કૃષ્ટ પરંપરાગત દેખાવ"
+    ],
+    decoration: "Royal carved pillars (રાજવાડી કોતરણી)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  7: {
+    id: 7, type: "sinhasan", tag: "Sinhasan", woodTag: "Savan Wood",
+    title: "Pavitra Savan Sinhasan (પવિત્ર સેવન સિંહાસન)",
+    overall: "14 × 12 inch", seat: "10 × 8 inch",
+    woodOptions: "Savan Wood (સેવન)",
+    image: "images/7.jpeg",
+    images: ["images/7.jpeg", "images/8.jpeg", "images/9.jpeg"],
+    highlights: [
+      "૧૦૦% શુદ્ધ પવિત્ર સેવન લાકડું (Sevan Timber)",
+      "સાત્વિક પૂજા અર્ચના માટે વિશિષ્ટ સિંહાસન",
+      "કુદરતી ચમકદાર સેવન પોલિશ ફિનિશ"
+    ],
+    decoration: "Natural smooth polish (સાત્વિક પોલિશ)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  8: {
+    id: 8, type: "folding", tag: "Folding Swing", woodTag: "Saag / Savan",
+    title: "Compact Mandir Folding Jula (કોમ્પેક્ટ ફોલ્ડિંગ જુલો)",
+    overall: "15 × 14 inch", seat: "8 × 6 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/8.jpeg",
+    images: ["images/8.jpeg", "images/9.jpeg", "images/1.jpeg"],
+    highlights: [
+      "હલકો અને ગમે ત્યાં મૂકી શકાય તેવો જુલો",
+      "નાના મંદિર માટે ઉત્તમ સાઈઝ",
+      "ટકાઉ સાગ અને સેવન મટિરિયલ"
+    ],
+    decoration: "Portable foldable mechanism (પોર્ટબલ ફોલ્ડિંગ)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+  9: {
+    id: 9, type: "fixed", tag: "Fixed Swing", woodTag: "Saag / Savan",
+    title: "Grand Temple Hindolo (મોટો ઠાકોરજી હિંડોળો)",
+    overall: "28–30 inch", seat: "16 × 10 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/9.jpeg",
+    images: ["images/9.jpeg", "images/1.jpeg", "images/2.jpeg"],
+    highlights: [
+      "મોટા મંદિર અને હવેલી માટે ગ્રાન્ડ સાઈઝ હિંડોળો",
+      "ભારે સાગ અને સેવન લાકડાનું મજબૂત માળખું",
+      "કસ્ટમાઇઝ્ડ ઓર્ડર પર બનાવી આપીએ છીએ"
+    ],
+    decoration: "Heavy carved arch & pillars (ભારે કમાન અને પિલર)",
+    price: null // e.g. price: 1200 to show ₹1,200 instead of "WhatsApp for Price"
+  },
+10: {
+    id: 10, type: "other", tag: "Other Items", woodTag: "Saag / Savan",
+    title: "Sinhasen with Bed ",
+    overall: "9 × 7.5 inch", seat: "9 × 7.5 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
+    image: "images/Other/O1.1.webp",
+    images: ["images/Other/O1.2.webp", "images/Other/O1.3.webp", "images/Other/O1.4.webp"],
+    highlights: [
+      "ઠાકોરજી અને ઘર મંદિર પૂજા માટે શુદ્ધ કાષ્ઠ",
+      "મજબૂત સાગ અને સેવન લાકડામાં ઉપલબ્ધ",
+      "કસ્ટમ સાઈઝ અને ડીઝાઈનમાં બનાવી આપીએ છીએ"
+    ],
+    decoration: "Traditional carved border (પરંપરાગત કોતરણી)",
+    price: 1499
+  }
+};
+
+let currentFilter = 'all';
+let displayLimit = INITIAL_LOAD_LIMIT;
+
+function formatPrice(price) {
+  return '₹' + Number(price).toLocaleString('en-IN');
+}
+
+function renderProducts() {
+  const grid = document.getElementById('productGrid');
+  const loadMoreBtn = document.getElementById('loadMoreWrap');
+  if (!grid) return;
+
+  const allItems = Object.values(PRODUCTS);
+  const filtered = currentFilter === 'all' 
+    ? allItems 
+    : allItems.filter(p => p.type === currentFilter);
+
+  const itemsToShow = filtered.slice(0, displayLimit);
+
+  grid.innerHTML = itemsToShow.map(p => `
+    <div class="prod-card reveal visible" data-pid="${p.id}">
+      <div class="prod-thumb">
+        <span class="prod-tag">${p.tag}</span>
+        <span class="prod-wood-tag">${p.woodTag}</span>
+        <img src="${p.image}" alt="${p.title}" loading="lazy" decoding="async">
+      </div>
+      <div class="prod-body">
+        <h3>${p.title}</h3>
+        <p class="prod-size"><strong>Size (માપ):</strong> ${p.overall} · <strong>Seat (બેઠક):</strong> ${p.seat}</p>
+        <p class="prod-price">${p.price ? formatPrice(p.price) : 'WhatsApp for Price · ભાવ માટે WhatsApp કરો'}</p>
+        <button class="cta-btn" onclick="openModal(${p.id})">View Details (વિગતો જુઓ) →</button>
+      </div>
+    </div>
+  `).join('');
+
+  if (loadMoreBtn) {
+    loadMoreBtn.style.display = displayLimit < filtered.length ? 'block' : 'none';
+  }
+}
+
+function filterProducts(type) {
+  currentFilter = type;
+  displayLimit = INITIAL_LOAD_LIMIT;
+  
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === type);
+  });
+
+  renderProducts();
+
+  const prodSec = document.getElementById('products');
+  if (prodSec && window.scrollY > prodSec.offsetTop + 100) {
+    prodSec.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function loadMoreProducts() {
+  displayLimit += INITIAL_LOAD_LIMIT;
+  renderProducts();
+}
+
+function openModal(id) {
+  const p = PRODUCTS[id];
+  if (!p) return;
+
+  const overlay = document.getElementById('productModal');
+  const mainImg = document.getElementById('modalMainImg');
+  const thumbsWrap = document.getElementById('modalThumbs');
+
+  document.getElementById('modalCategory').textContent = p.tag + " · " + p.woodTag;
+  document.getElementById('modalTitle').textContent = p.title;
+  document.getElementById('modalPrice').textContent = p.price
+    ? formatPrice(p.price)
+    : 'WhatsApp for Price · ભાવ માટે WhatsApp કરો';
+
+  document.getElementById('modalHighlights').innerHTML = p.highlights
+    .map(h => `<li>${h}</li>`).join('');
+
+  document.getElementById('modalSpecs').innerHTML = `
+    <tr><th>Overall Dimensions (માપ)</th><td>${p.overall}</td></tr>
+    <tr><th>Seat Dimensions (બેઠક માપ)</th><td>${p.seat}</td></tr>
+    <tr><th>Wood Material (લાકડું)</th><td>${p.woodOptions}</td></tr>
+    <tr><th>Finish (પોલિશ)</th><td>Natural Wood Polish (કુદરતી પોલિશ)</td></tr>
+  `;
+
+  mainImg.innerHTML = `<img src="${p.image}" alt="${p.title}">`;
+  thumbsWrap.innerHTML = p.images.map((img, i) =>
+    `<div class="modal-thumb${i === 0 ? ' active' : ''}" data-img="${img}">
+      <img src="${img}" alt="Product image">
+    </div>`
+  ).join('');
+
+  thumbsWrap.querySelectorAll('.modal-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      thumbsWrap.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      mainImg.innerHTML = `<img src="${thumb.dataset.img}" alt="Product detail image">`;
+    });
+  });
+
+  overlay.classList.add('opening');
+  requestAnimationFrame(() => {
+    overlay.classList.add('open');
+    overlay.classList.remove('opening');
+  });
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const overlay = document.getElementById('productModal');
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderProducts();
+
+  const grid = document.getElementById('productGrid');
+  if (grid) {
+    grid.addEventListener('click', (e) => {
+      if (e.target.closest('.cta-btn')) return;
+      const card = e.target.closest('.prod-card');
+      if (card && card.dataset.pid) {
+        openModal(parseInt(card.dataset.pid));
+      }
+    });
+  }
+
+
+  let lastScrollY = window.scrollY;
+  let scrollTicking = false;
+  const header = document.getElementById('header');
+  const mainNav = document.getElementById('mainNav');
+
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+        const isNavOpen = mainNav && mainNav.classList.contains('open');
+
+        header.classList.toggle('scrolled', currentScrollY > 40);
+
+        // Hide navigation on scroll down, show when scrolling up / swiping above
+        if (!isNavOpen) {
+          if (currentScrollY > lastScrollY && currentScrollY > 60) {
+            header.classList.add('header-hidden');
+          } else if (currentScrollY < lastScrollY || currentScrollY <= 20) {
+            header.classList.remove('header-hidden');
+          }
+        }
+        lastScrollY = Math.max(0, currentScrollY);
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mainNav').classList.remove('open');
+    });
+  });
+
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY + 120;
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute('id');
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
+      if (link) {
+        link.classList.toggle('active', scrollY >= top && scrollY < top + height);
+      }
+    });
+  }, { passive: true });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
+  reveals.forEach(el => revealObserver.observe(el));
+
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('productModal').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+});
+</script>
+</body>
+</html>

@@ -494,9 +494,10 @@ var PRODUCTS = {
     price: 1399
   },
   2: {
-    id: 2, type: "jula", tag: "Jula / Hindola",
+    id: 2, type: "jula", tag: "Jula / Hindola", woodTag: "Saag / Savan",
     title: "Jula (જુલો)",
-    overall: "9–12 inch", seat: " × 3.5-5 inch",
+    overall: "9–12 inch", seat: "3.5–5 inch",
+    woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
     image: "Fixed/raw/16.jpg",
     images: ["Fixed/raw/16.jpg", "Fixed/raw/19.jpg", "Fixed/raw/20.jpg", "Fixed/raw/26.jpg"],
     highlights: [
@@ -514,8 +515,8 @@ var PRODUCTS = {
     image: "Folding/46.jpg",
     images: ["Folding/46.jpg", "Folding/47.jpg", "Folding/48.jpg"],
     highlights: [
-      "સહેલાઈથી ફોલ્ડ કરી શકાય તેવો સ્પેસ-સેવિંગ હિંડોળો"
-      "ઓર્ડર મુજબ સાઈઝ કસ્ટમાઈઝ થઈ શકે"
+      "સહેલાઈથી ફોલ્ડ કરી શકાય તેવો સ્પેસ-સેવિંગ હિંડોળો",
+      "ઓર્ડર મુજબ સાઈઝ કસ્ટમાઈઝ થઈ શકે",
       "ઠાકોરજીના પૂજન માટે અનુકૂળ",
       "સાગ અથવા સેવન લાકડામાં ઉપલબ્ધ"
     ],
@@ -541,10 +542,10 @@ var PRODUCTS = {
   5: {
     id: 5, type: "other", tag: "Palna", woodTag: "Saag / Savan",
     title: "Palna",
-    overall: "Custom",
+    overall: "Custom", seat: "Custom",
     woodOptions: "Saag Wood (સાગ) & Savan Wood (સેવન)",
     image: "Other/raw/Untitled design.png",
-    images: ["Other/raw/Untitled design.png","Other/raw/30.jpg","Other/raw/31.jpg","Other/raw/33.jpg"],
+    images: ["Other/raw/Untitled design.png", "Other/raw/30.jpg", "Other/raw/31.jpg", "Other/raw/33.jpg"],
     highlights: [
       "ભારે સાગ અને સેવન લાકડાનું મજબૂત માળખું",
       "કસ્ટમાઇઝ્ડ ઓર્ડર પર બનાવી આપીએ છીએ"
@@ -568,6 +569,7 @@ var PRODUCTS = {
     price: 1499
   }
 };
+
 
 var currentFilter = 'all';
 var displayLimit = 6;
